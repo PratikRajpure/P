@@ -1,0 +1,51 @@
+package com.comparator;
+
+import java.util.Comparator;
+
+public class Emp implements Comparator<Emp>{
+	int empId;
+	String empName;
+    String empAddress;
+
+    public Emp(int empId, String empName, String empAddress) {
+		this.empId = empId;
+		this.empName = empName;
+		this.empAddress = empAddress;
+	}
+
+	public int getEmpId() {
+		return empId;
+	}
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public String getEmpAddress() {
+		return empAddress;
+	}
+
+	public void setEmpAddress(String empAddress) {
+		empAddress = empAddress;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Employee [Employee ID=" + getEmpId() + ",Employee Name=" + getEmpName() + ",Employee Address=" + getEmpAddress() + "]";
+	}
+
+	@Override
+	public int compare(Emp o1, Emp o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+

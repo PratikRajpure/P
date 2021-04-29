@@ -1,0 +1,29 @@
+package com.comparable;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TreeSetEmpInfo {
+
+	public static void main(String[] args) {
+
+		Set set = new TreeSet(); // will provide default natural sorting -ascending
+
+		Emp e1 = new Emp(13, "Omkar", "Wagholi");
+		Emp e2 = new Emp(149, "Swapnil", "Hadapsar");
+		Emp e3 = new Emp(133, "Sudhir", "Pimpari");
+		Emp e4 = new Emp(54, "Sumit", "Katraj");
+		Emp e5 = new Emp(78, "Rushi", "Vimannagar");
+
+		set.add(e3);
+		set.add(e1);
+		set.add(e5);
+		set.add(e2);
+		set.add(e4);
+
+		for (Object o : set) {
+			System.out.println(o);
+		}
+	}
+
+}
